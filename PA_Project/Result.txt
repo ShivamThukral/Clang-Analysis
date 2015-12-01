@@ -1,0 +1,230 @@
+-----------Function Declaration--------------------
+Function Found:	check
+Return Type:	int
+Function Location:	test.cpp:3:5
+Function 	 Begin:	test.cpp:3:1	 End:	test.cpp:6:1
+Function Length:	3
+	Function Parameter:   Name:	x   Type:	int
+	Function Parameter:   Name:	y   Type:	int
+Some Information of Function:
+ Is Function Defined:			true
+ Function marked as virtual explicitly:	false
+ Function has body:			true
+ Function is pure virtual function:	false
+---------------------------------------------------
+--------------- Return Statement ------------------
+Found Return Statement at:test.cpp:5:9
+Return Type: int
+---------------------------------------------------
+-----------Function Declaration--------------------
+Function Found:	do_math
+Return Type:	void
+Function Location:	test.cpp:7:6
+Function 	 Begin:	test.cpp:7:1	 End:	test.cpp:14:1
+Function Length:	7
+	Function Parameter:   Name:	x   Type:	int *
+	Function Parameter:   Name:	t   Type:	char
+Some Information of Function:
+ Is Function Defined:			true
+ Function marked as virtual explicitly:	false
+ Function has body:			true
+ Function is pure virtual function:	false
+---------------------------------------------------
+-------------Binary Operator ----------------------
+Line Number:	test.cpp:8:8	Assignment Operator +=
+---------------------------------------------------
+--------------- If Statement ----------------------
+Found If Block at:	test.cpp:9:5
+Condition: check(1,2)
+Return Type of If Condition:_Bool
+Type:	int
+Function Name:	check(1,2)
+---------------------------------------------------
+--------------- Function Call Statement ------------------
+Calling Function:	do_math
+Found Function Call at:test.cpp:9:8
+Function Name:	check(1,2)
+---------------------------------------------------
+-------------Binary Operator ----------------------
+Line Number:	test.cpp:10:12	Assignment Operator =
+---------------------------------------------------
+--------------- If Statement ----------------------
+Found If Block at:	test.cpp:11:2
+Condition: x
+Condition Variable:	x
+Return Type of If Condition:_Bool
+---------------------------------------------------
+--------------- Declaration Statement ------------------
+Local Variable: x	Parent Function Name:  do_math	
+---------------------------------------------------
+--------------- Function Call Statement ------------------
+Calling Function:	do_math
+Found Function Call at:test.cpp:11:14
+Function Name:	check(1,3)
+---------------------------------------------------
+-------------Binary Operator ----------------------
+Line Number:	test.cpp:12:5	Assignment Operator =
+---------------------------------------------------
+-----------Function Declaration--------------------
+Function Found:	iffuncCheck
+Return Type:	void
+Function Location:	test.cpp:16:6
+Function 	 Begin:	test.cpp:16:1	 End:	test.cpp:39:1
+Function Length:	23
+Some Information of Function:
+ Is Function Defined:			true
+ Function marked as virtual explicitly:	false
+ Function has body:			true
+ Function is pure virtual function:	false
+---------------------------------------------------
+--------------- Function Call Statement ------------------
+Calling Function:	iffuncCheck
+***Recursive Call Found***
+Found Function Call at:test.cpp:18:2
+Function Name:	iffuncCheck()
+---------------------------------------------------
+--------------- If Statement ----------------------
+Found If Block at:	test.cpp:19:2
+Condition: 2==1
+Found Else Block at:	test.cpp:23:2
+Return Type of If Condition:_Bool
+---------------------------------------------------
+-------------Binary Operator ----------------------
+Line Number:	test.cpp:19:6	Equality Operator ==
+---------------------------------------------------
+--------------- Declaration Statement ------------------
+Local Variable: k	Parent Function Name:  iffuncCheck	
+---------------------------------------------------
+--------------- Declaration Statement ------------------
+Local Variable: y	Parent Function Name:  iffuncCheck	
+---------------------------------------------------
+--------------- Declaration Statement ------------------
+Local Variable: i	Parent Function Name:  iffuncCheck	
+---------------------------------------------------
+-------------- For Statement ----------------------
+Found For Loop at:	test.cpp:27:2
+Condition: xyz
+Condition Variable:	xyz
+Variable Changed ( Incremented ) : i++
+---------------------------------------------------
+-------------Binary Operator ----------------------
+Line Number:	test.cpp:27:7	Assignment Operator =
+---------------------------------------------------
+--------------- Declaration Statement ------------------
+Local Variable: xyz	Parent Function Name:  iffuncCheck	
+---------------------------------------------------
+-------------Binary Operator ----------------------
+Line Number:	test.cpp:27:19	Logical Operator
+---------------------------------------------------
+-------------Binary Operator ----------------------
+Line Number:	test.cpp:27:22	Relational Operator <
+---------------------------------------------------
+-------------While Statement ----------------------
+Found While Loop at:	test.cpp:31:2
+Condition: x
+Condition Variable:	x
+---------------------------------------------------
+--------------- Declaration Statement ------------------
+Local Variable: x	Parent Function Name:  iffuncCheck	
+---------------------------------------------------
+-------------While Statement ----------------------
+Found While Loop at:	test.cpp:35:2
+Condition: i!=3
+---------------------------------------------------
+-------------Binary Operator ----------------------
+Line Number:	test.cpp:35:9	Equality Operator !=
+---------------------------------------------------
+-----------Function Declaration--------------------
+Function Found:	testSwitchCase
+Return Type:	void
+Function Location:	test.cpp:41:6
+Function 	 Begin:	test.cpp:41:1	 End:	test.cpp:57:1
+Function Length:	16
+Some Information of Function:
+ Is Function Defined:			true
+ Function marked as virtual explicitly:	false
+ Function has body:			true
+ Function is pure virtual function:	false
+---------------------------------------------------
+--------------- Declaration Statement ------------------
+Local Variable: x	Parent Function Name:  testSwitchCase	
+---------------------------------------------------
+--------------- Switch Statement ------------------
+
+Found Switch Statement at:	test.cpp:45:2
+Condition: x
+Case Stmt:	1
+Case Stmt:	2
+Case Stmt:	3
+---------------------------------------------------
+-------------Binary Operator ----------------------
+Line Number:	test.cpp:47:11	Assignment Operator =
+---------------------------------------------------
+-------------Binary Operator ----------------------
+Line Number:	test.cpp:48:12	Assignment Operator =
+---------------------------------------------------
+-------------Binary Operator ----------------------
+Line Number:	test.cpp:49:11	Assignment Operator =
+---------------------------------------------------
+--------------- Declaration Statement ------------------
+Local Variable: ch	Parent Function Name:  testSwitchCase	
+---------------------------------------------------
+--------------- Switch Statement ------------------
+
+Found Switch Statement at:	test.cpp:52:2
+Condition: ch
+Case Stmt:	'b'
+Case Stmt:	'a'
+---------------------------------------------------
+-------------Binary Operator ----------------------
+Line Number:	test.cpp:54:15	Assignment Operator =
+---------------------------------------------------
+-------------Binary Operator ----------------------
+Line Number:	test.cpp:55:14	Assignment Operator =
+---------------------------------------------------
+-----------Function Declaration--------------------
+Function Found:	main
+Return Type:	int
+Function Location:	test.cpp:59:5
+Function 	 Begin:	test.cpp:59:1	 End:	test.cpp:64:1
+Function Length:	5
+Some Information of Function:
+ Is Function Defined:			true
+ Function marked as virtual explicitly:	false
+ Function has body:			true
+ Function is pure virtual function:	false
+---------------------------------------------------
+--------------- Declaration Statement ------------------
+Local Variable: result	Parent Function Name:  main	
+Local Variable: val	Parent Function Name:  main	
+---------------------------------------------------
+--------------- Function Call Statement ------------------
+Calling Function:	main
+Found Function Call at:test.cpp:61:5
+Function Name:	do_math(&val,'a')
+---------------------------------------------------
+-------------Binary Operator ----------------------
+Line Number:	test.cpp:62:11	Assignment Operator =
+---------------------------------------------------
+--------------- Return Statement ------------------
+Found Return Statement at:test.cpp:63:12
+Return Type: int
+---------------------------------------------------
+
+===========================================================
+------------------Cumulative Analysis----------------------
+===========================================================
+Number of Functions:		5
+Number of IfStmts:		3
+Number of ForStmts:		1
+Number of whileStmts:		2
+Number of switchStmts:		2
+Number of function calls:	4
+Number of Recursive Calls:	1
+Number of Lines Scanned:	42
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Average Function Size:		10
+Minimum Function Size:		3
+Maximum Function Size:		23
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+===========================================================
