@@ -26,5 +26,5 @@ clang++ Analyse_Programs.cpp -fno-rtti -lpthread -lm -lLLVMX86Disassembler \
 -std=c++0x
 ```
 
-##Sample Output:
+## Sample Output:
 ![image info](./code-base/images/compare.png)
